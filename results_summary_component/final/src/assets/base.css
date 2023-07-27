@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+  --color-background: #fff;
+  --color-text: #000;
+  --text-white: #fff;
+
+  --color-pm-light-red: hsl(0, 100%, 67%);
+  --color-pm-light-red-bg: hsla(0, 100%, 97%, 1);
+  --color-pm-orangey-yellow: hsl(39, 100%, 56%);
+  --color-pm-orangey-yellow-bg: hsl(39, 100%, 97%);
+  --color-pm-green-teal: hsl(166, 100%, 37%);
+  --color-pm-green-teal-bg: hsl(166, 100%, 97%);
+  --color-pm-cobalt-blue: hsl(234, 85%, 45%);
+  --color-pm-cobalt-blue-bg: hsl(234, 85%, 97%);
+
+  --color-violet: hsla(256, 72%, 46%, 1);
+  --color-persian: hsla(241, 72%, 46%, 0);
+
+  --btn-pm-clr: hsla(241, 72%, 14%, 1);
+
+  --color-light-lavender: hsl(241, 100%, 89%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+body {
+  color: var(--color-text);
+  background: var(--color-background);
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 18px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+#app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+@media only screen and (max-width: 600px) {
+  #app {
+    align-items: stretch;
+  }
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2rem;
+}
+
+.half-containers {
+  flex: 1;
+}
+
+.reaction-txt {
+  color: var(--color-pm-light-red);
+  background-color: var(--color-pm-light-red-bg);
+}
+
+.memory-txt {
+  color: var(--color-pm-orangey-yellow);
+  background-color: var(--color-pm-orangey-yellow-bg);
+}
+
+.verbal-txt {
+  color: var(--color-pm-green-teal);
+  background-color: var(--color-pm-green-teal-bg);
+}
+
+.visual-txt {
+  color: var(--color-pm-cobalt-blue);
+  background-color: var(--color-pm-cobalt-blue-bg);
+}
