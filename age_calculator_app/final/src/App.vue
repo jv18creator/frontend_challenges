@@ -93,6 +93,8 @@ function calculateRemainingTime(givenDate) {
         <input
           pattern="\d*"
           maxlength="2"
+          id="day"
+          placeholder="DD"
           name="day"
           type="text"
           :value="day"
@@ -107,6 +109,8 @@ function calculateRemainingTime(givenDate) {
           pattern="\d*"
           maxlength="2"
           name="month"
+          placeholder="MM"
+          id="month"
           type="text"
         />
       </div>
@@ -117,6 +121,7 @@ function calculateRemainingTime(givenDate) {
           :value="year"
           type="text"
           name="year"
+          placeholder="YYYY"
           id="year"
           required
           pattern="\d*"
